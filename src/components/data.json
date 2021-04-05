@@ -1,97 +1,241 @@
 [{
-        "Auto": [
-            "bus",
-            "bike",
-            "car",
-            "trein"
+        "question": "Auto",
+        "answersList": [{
+                "answer": "Bus",
+                "isCorrect": false
+            },
+            {
+                "answer": "Bike",
+                "isCorrect": false
+            },
+            {
+                "answer": "Car",
+                "isCorrect": true
+            },
+            {
+                "answer": "Train",
+                "isCorrect": false
+            }
         ]
     },
     {
-        "Velo": [
-            "bus",
-            "bike",
-            "car",
-            "trein"
+        "question": "Velo",
+        "answersList": [{
+                "answer": "Car",
+                "isCorrect": false
+            },
+            {
+                "answer": "Bike",
+                "isCorrect": true
+            },
+            {
+                "answer": "Train",
+                "isCorrect": false
+            },
+            {
+                "answer": "Bus",
+                "isCorrect": false
+            }
         ]
     },
     {
-        "Bus": [
-            "bus",
-            "bike",
-            "car",
-            "trein"
+        "question": "Bus",
+        "answersList": [{
+                "answer": "Bus",
+                "isCorrect": true
+            },
+            {
+                "answer": "Car",
+                "isCorrect": false
+            },
+            {
+                "answer": "Train",
+                "isCorrect": false
+            },
+            {
+                "answer": "Bike",
+                "isCorrect": false
+            }
         ]
     },
     {
-        "Zug": [
-            "bus",
-            "bike",
-            "car",
-            "trein"
+        "question": "Zug",
+        "answersList": [{
+                "answer": "Bike",
+                "isCorrect": false
+            },
+            {
+                "answer": "Car",
+                "isCorrect": false
+            },
+            {
+                "answer": "Bus",
+                "isCorrect": false
+            },
+            {
+                "answer": "Train",
+                "isCorrect": true
+            }
         ]
     },
     {
-        "Rot": [
-            "pink",
-            "yellow",
-            "white",
-            "red"
+        "question": "Rot",
+        "answersList": [{
+                "answer": "Red",
+                "isCorrect": true
+            },
+            {
+                "answer": "Pink",
+                "isCorrect": false
+            },
+            {
+                "answer": "Blue",
+                "isCorrect": false
+            },
+            {
+                "answer": "Yellow",
+                "isCorrect": false
+            }
         ]
     },
     {
-        "Weiss": [
-            "pink",
-            "yellow",
-            "white",
-            "red"
+        "question": "Weiss",
+        "answersList": [{
+                "answer": "Pink",
+                "isCorrect": false
+            },
+            {
+                "answer": "Red",
+                "isCorrect": false
+            },
+            {
+                "answer": "Yellow",
+                "isCorrect": false
+            },
+            {
+                "answer": "White",
+                "isCorrect": true
+            }
         ]
     },
     {
-        "Gelb": [
-            "pink",
-            "yellow",
-            "white",
-            "red"
+        "question": "Gelb",
+        "answersList": [{
+                "answer": "White",
+                "isCorrect": false
+            },
+            {
+                "answer": "Yellow",
+                "isCorrect": true
+            },
+            {
+                "answer": "Pink",
+                "isCorrect": false
+            },
+            {
+                "answer": "Red",
+                "isCorrect": false
+            }
         ]
     },
     {
-        "Rosa": [
-            "pink",
-            "yellow",
-            "white",
-            "red"
+        "question": "Rosa",
+        "answersList": [{
+                "answer": "Yellow",
+                "isCorrect": false
+            },
+            {
+                "answer": "Red",
+                "isCorrect": false
+            },
+            {
+                "answer": "Pink",
+                "isCorrect": true
+            },
+            {
+                "answer": "White",
+                "isCorrect": false
+            }
         ]
     },
     {
-        "Montag": [
-            "thursday",
-            "tuesday",
-            "wednesday",
-            "monday"
+        "question": "Montag",
+        "answersList": [{
+                "answer": "Monday",
+                "isCorrect": true
+            },
+            {
+                "answer": "Tuesday",
+                "isCorrect": false
+            },
+            {
+                "answer": "Sunday",
+                "isCorrect": false
+            },
+            {
+                "answer": "Wednesday",
+                "isCorrect": false
+            }
         ]
     },
     {
-        "Mittwoch": [
-            "thursday",
-            "tuesday",
-            "wednesday",
-            "monday"
+        "question": "Mittwoch",
+        "answersList": [{
+                "answer": "Thursday",
+                "isCorrect": false
+            },
+            {
+                "answer": "Monday",
+                "isCorrect": false
+            },
+            {
+                "answer": "Wednesday",
+                "isCorrect": true
+            },
+            {
+                "answer": "Tuesday",
+                "isCorrect": false
+            }
         ]
     },
     {
-        "Dienstag": [
-            "thursday",
-            "tuesday",
-            "wednesday",
-            "monday"
+        "question": "Dienstag",
+        "answersList": [{
+                "answer": "Monday",
+                "isCorrect": false
+            },
+            {
+                "answer": "Tuesday",
+                "isCorrect": true
+            },
+            {
+                "answer": "Thursday",
+                "isCorrect": false
+            },
+            {
+                "answer": "Wednesday",
+                "isCorrect": false
+            }
         ]
     },
     {
-        "Donnerstag": [
-            "thursday",
-            "tuesday",
-            "wednesday",
-            "monday"
+        "question": "Donnerstag",
+        "answersList": [{
+                "answer": "Thursday",
+                "isCorrect": false
+            },
+            {
+                "answer": "Monday",
+                "isCorrect": false
+            },
+            {
+                "answer": "Sunday",
+                "isCorrect": false
+            },
+            {
+                "answer": "Thursday",
+                "isCorrect": true
+            }
         ]
     }
 ]

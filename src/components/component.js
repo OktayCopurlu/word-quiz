@@ -16,6 +16,7 @@ Kriterler:
 import { useState } from "react";
 
 function GetData(props) {
+  //cevap seçildikten sonraki aksiyonlar
   const [puan, setPuan] = useState(0);
   const [cevap, setCevap] = useState("DOGRU CEVAP 10 PUAN");
   const [dogruCevap, setDogruCevap] = useState(0);
@@ -25,15 +26,15 @@ function GetData(props) {
     if (e.target.id.includes("true")) {
       setPuan(puan + 10);
       setCevap("DOGRU BILDIN BRAVOOO");
-      setDogruCevap(dogruCevap + 1)
+      setDogruCevap(dogruCevap + 1);
     } else {
       setCevap("SIKI CALISMALISIN");
-      setYanlisCevap(yanlisCevap + 1)
+      setYanlisCevap(yanlisCevap + 1);
     }
   }
 
+  //Soruyo random alıp ekrana yazdırma
   let soru = props.list[Math.floor(Math.random() * props.list.length)];
-
   let answers = [];
   let isCorrect = [];
 
@@ -44,7 +45,7 @@ function GetData(props) {
 
   return (
     <>
-    <button>{cevap}</button>
+      <button>{cevap}</button>
       <div className="soru">
         <div>
           <button>{soru.question}</button>
@@ -57,9 +58,8 @@ function GetData(props) {
           );
         })}
       </div>
-      
+
       <div className="skor">
-        
         <button>DOGRU CEVAP : {dogruCevap}</button>
         <button>YANLIS CEVAP :{yanlisCevap}</button>
         <button>PUAN : {puan}</button>
