@@ -1,0 +1,97 @@
+[{
+        "Auto": [
+            "bus",
+            "bike",
+            "car",
+            "trein"
+        ]
+    },
+    {
+        "Velo": [
+            "bus",
+            "bike",
+            "car",
+            "trein"
+        ]
+    },
+    {
+        "Bus": [
+            "bus",
+            "bike",
+            "car",
+            "trein"
+        ]
+    },
+    {
+        "Zug": [
+            "bus",
+            "bike",
+            "car",
+            "trein"
+        ]
+    },
+    {
+        "Rot": [
+            "pink",
+            "yellow",
+            "white",
+            "red"
+        ]
+    },
+    {
+        "Weiss": [
+            "pink",
+            "yellow",
+            "white",
+            "red"
+        ]
+    },
+    {
+        "Gelb": [
+            "pink",
+            "yellow",
+            "white",
+            "red"
+        ]
+    },
+    {
+        "Rosa": [
+            "pink",
+            "yellow",
+            "white",
+            "red"
+        ]
+    },
+    {
+        "Montag": [
+            "thursday",
+            "tuesday",
+            "wednesday",
+            "monday"
+        ]
+    },
+    {
+        "Mittwoch": [
+            "thursday",
+            "tuesday",
+            "wednesday",
+            "monday"
+        ]
+    },
+    {
+        "Dienstag": [
+            "thursday",
+            "tuesday",
+            "wednesday",
+            "monday"
+        ]
+    },
+    {
+        "Donnerstag": [
+            "thursday",
+            "tuesday",
+            "wednesday",
+            "monday"
+        ]
+    }
+]

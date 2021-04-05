@@ -1,0 +1,110 @@
+[
+    {
+        "question": "Auto",
+        "answersList": [
+            { "answer": "Bus", "isCorrect": false },
+            { "answer": "Bike", "isCorrect": false },
+            { "answer": "Car", "isCorrect": true },
+            { "answer": "Train", "isCorrect": false }
+        ]
+    },
+    {
+        "question": "Velo",
+        "answersList": [
+            { "answer": "Bus", "isCorrect": false },
+            { "answer": "Bike", "isCorrect": true },
+            { "answer": "Car", "isCorrect": false },
+            { "answer": "Train", "isCorrect": false }
+        ]
+    },
+    {
+        "question": "Bus",
+        "answersList": [
+            { "answer": "Bus", "isCorrect": true },
+            { "answer": "Bike", "isCorrect": false },
+            { "answer": "Car", "isCorrect": false },
+            { "answer": "Train", "isCorrect": false }
+        ]
+    },
+    {
+        "question": "Zug",
+        "answersList": [
+            { "answer": "Bus", "isCorrect": false },
+            { "answer": "Bike", "isCorrect": false },
+            { "answer": "Car", "isCorrect": false },
+            { "answer": "Train", "isCorrect": true }
+        ]
+    },
+    {
+        "question": "Rot",
+        "answersList": [
+            { "answer": "Red", "isCorrect": true },
+            { "answer": "Yellow", "isCorrect": false },
+            { "answer": "Pink", "isCorrect": false },
+            { "answer": "Blue", "isCorrect": false }
+        ]
+    },
+    {
+        "question": "Weiss",
+        "answersList": [
+            { "answer": "Red", "isCorrect": false },
+            { "answer": "Yellow", "isCorrect": false },
+            { "answer": "Pink", "isCorrect": false },
+            { "answer": "White", "isCorrect": true }
+        ]
+    },
+    {
+        "question": "Gelb",
+        "answersList": [
+            { "answer": "Red", "isCorrect": false },
+            { "answer": "Yellow", "isCorrect": true },
+            { "answer": "Pink", "isCorrect": false },
+            { "answer": "White", "isCorrect": false }
+        ]
+    },
+    {
+        "question": "Rosa",
+        "answersList": [
+            { "answer": "Red", "isCorrect": false },
+            { "answer": "Yellow", "isCorrect": false },
+            { "answer": "Pink", "isCorrect": true },
+            { "answer": "White", "isCorrect": false }
+        ]
+    },
+    {
+        "question": "Montag",
+        "answersList": [
+            { "answer": "Monday", "isCorrect": true },
+            { "answer": "Tuesday", "isCorrect": false },
+            { "answer": "Wednesday", "isCorrect": false },
+            { "answer": "White", "isCorrect": false }
+        ]
+    },
+    {
+        "question": "Mittwoch",
+        "answersList": [
+            { "answer": "Monday", "isCorrect": false },
+            { "answer": "Tuesday", "isCorrect": false },
+            { "answer": "Wednesday", "isCorrect": true },
+            { "answer": "Thursday", "isCorrect": false }
+        ]
+    },
+    {
+        "question": "Dienstag",
+        "answersList": [
+            { "answer": "Monday", "isCorrect": false },
+            { "answer": "Tuesday", "isCorrect": true },
+            { "answer": "Wednesday", "isCorrect": false },
+            { "answer": "Thursday", "isCorrect": false }
+        ]
+    },
+    {
+        "question": "Donnerstag",
+        "answersList": [
+            { "answer": "Monday", "isCorrect": false },
+            { "answer": "Tuesday", "isCorrect": false },
+            { "answer": "Wednesday", "isCorrect": false },
+            { "answer": "Thursday", "isCorrect": true }
+        ]
+    }
+]
