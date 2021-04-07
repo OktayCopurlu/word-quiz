@@ -13,31 +13,34 @@ Kriterler:
  * @param {*} props 
  */
 
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import Swal from 'sweetalert2'
 
 
 function GetData(props) {
-  //cevap seçildikten sonraki aksiyonlar
-  const [puan, setPuan] = useState(0);
-  const [cevap, setCevap] = useState("DOGRU CEVAP 10 PUAN");
-  const [dogruCevap, setDogruCevap] = useState(0);
-  const [yanlisCevap, setYanlisCevap] = useState(0);
-  const[soruSayisi,setSoruSayisi] = useState(0)
-
-  function Choose(e) {
-      setSoruSayisi(soruSayisi + 1)
-    if (e.target.id.includes("true")) {
-      setPuan(puan + 10);
-      setCevap("DOGRU BILDIN BRAVOOO");
-      setDogruCevap(dogruCevap + 1);
-
-    } else {
-      setCevap("SIKI CALISMALISIN");
-      setYanlisCevap(yanlisCevap + 1);
-      
+    //cevap seçildikten sonraki aksiyonlar
+    const [puan, setPuan] = useState(0);
+    const [cevap, setCevap] = useState("DOGRU CEVAP 10 PUAN");
+    const [dogruCevap, setDogruCevap] = useState(0);
+    const [yanlisCevap, setYanlisCevap] = useState(0);
+    const[soruSayisi,setSoruSayisi] = useState(0)
+    const[isVisible,setIsVisible] = useState(true)
+  
+    function Choose(e) {
+        setSoruSayisi(soruSayisi + 1)
+      if (e.target.id.includes("true")) {
+        setIsVisible(true)
+        setPuan(puan + 10);
+        setCevap("DOGRU BILDIN BRAVOOO");
+        setDogruCevap(dogruCevap + 1);
+  
+      } else {
+        setCevap("SIKI CALISMALISIN");
+        setYanlisCevap(yanlisCevap + 1);
+        setIsVisible(false)
+      }
     }
-  }
+  
   //OYUNU BITIRME BUTONU
   function Finish(e){
     window.location.reload()
@@ -73,7 +76,7 @@ function GetData(props) {
         </div>
         {answers.map((answer) => {
           return (
-            <button key={answer} id={answer} onClick={Choose}>
+            <button  key={answer} id={answer} onClick={Choose}>
               {answer}
             </button>
           );
@@ -81,8 +84,8 @@ function GetData(props) {
       </div>
 
       <div className="skor">
-        <button >CORRECT ANSWER: {dogruCevap}</button>
-        <button>FALSE ANSWER :{yanlisCevap}</button>
+        <button style={isVisible ?{backgroundColor:"green"}:null}>CORRECT ANSWER: {dogruCevap}</button>
+        <button style={(!isVisible) ?{backgroundColor:"red"}:null}>FALSE ANSWER :{yanlisCevap}</button>
         <button>POINT : {puan}</button>
       </div>
       <button id="yeni-oyun" onClick={Finish}type="button">OYUNU BITIR VE YENI OYUNA BASLA</button>
