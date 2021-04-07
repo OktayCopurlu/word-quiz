@@ -59,14 +59,16 @@ function GetData(props) {
     Swal.fire("YENİ OYUN BASLIYOR.. HAZIRSAN BASLA");
   } else if (soruSayisi === 9) {
     Swal.fire(
-      "SON SORU GELİYOR CEVABINDAN SONRA OYUN BITECEK---TOPLAM PUANIN :" + puan
+      "SON SORU GELİYOR"
     );
-  }
-  if (soruSayisi === 10) {
+  }else if (soruSayisi === 10) {
     //10 soruyu geçtiğinde oyun bitiyor.
     document.querySelector("#root").innerHTML = 
     `<button type="button">OYUN BITTI... PUANINIZ : ${puan}</button>
     <button id="finish" type="button">HAYDI BIR OYUN DAHA OYNA</button>`
+    Swal.fire(
+      "OYUN BITTI PUANINIZ : " + puan
+    );
     document.querySelector('#finish').addEventListener("click",
         
         function refreshPage(){ 
