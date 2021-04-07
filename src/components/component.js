@@ -13,7 +13,9 @@ Kriterler:
  * @param {*} props 
  */
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Swal from 'sweetalert2'
+
 
 function GetData(props) {
   //cevap seçildikten sonraki aksiyonlar
@@ -21,18 +23,37 @@ function GetData(props) {
   const [cevap, setCevap] = useState("DOGRU CEVAP 10 PUAN");
   const [dogruCevap, setDogruCevap] = useState(0);
   const [yanlisCevap, setYanlisCevap] = useState(0);
+  const[soruSayisi,setSoruSayisi] = useState(0)
 
   function Choose(e) {
+      setSoruSayisi(soruSayisi + 1)
     if (e.target.id.includes("true")) {
       setPuan(puan + 10);
       setCevap("DOGRU BILDIN BRAVOOO");
       setDogruCevap(dogruCevap + 1);
+
     } else {
       setCevap("SIKI CALISMALISIN");
       setYanlisCevap(yanlisCevap + 1);
+      
     }
   }
+  //OYUNU BITIRME BUTONU
+  function Finish(e){
+    window.location.reload()
+  }
 
+  //OYUN ICI ALERTLER
+  if(soruSayisi===0){
+    Swal.fire("YENİ OYUN BASLIYOR.. HAZIRSAN BASLA")
+
+  }else if(soruSayisi===9){
+    Swal.fire("SON SORU GELİYOR CEVABINDAN SONRA OYUN BITECEK---TOPLAM PUANIN :" + puan)
+  } if(soruSayisi === 10){
+    window.location.reload()
+    
+  }
+  
   //Soruyo random alıp ekrana yazdırma
   let soru = props.list[Math.floor(Math.random() * props.list.length)];
   let answers = [];
@@ -60,10 +81,11 @@ function GetData(props) {
       </div>
 
       <div className="skor">
-        <button>DOGRU CEVAP : {dogruCevap}</button>
-        <button>YANLIS CEVAP :{yanlisCevap}</button>
-        <button>PUAN : {puan}</button>
+        <button >CORRECT ANSWER: {dogruCevap}</button>
+        <button>FALSE ANSWER :{yanlisCevap}</button>
+        <button>POINT : {puan}</button>
       </div>
+      <button id="yeni-oyun" onClick={Finish}type="button">OYUNU BITIR VE YENI OYUNA BASLA</button>
     </>
   );
 }
