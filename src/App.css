@@ -12,7 +12,9 @@ button {
   padding: 10px;
   font-size: large;
 }
-
+button:hover{
+  background-color:antiquewhite;
+}
 .soru {
   border: 1px solid black;
   box-shadow: 2px 3px gray;
@@ -33,3 +35,10 @@ button {
 
 }
 
+.oyun-bitti{
+font-size:30px;
+padding:10px;
+}
+.oyun-bitti:hover{
+  background-color:antiquewhite;
+}

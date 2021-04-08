@@ -4,10 +4,10 @@ export default function Alert(soruSayisi, puan) {
   //OYUN ICI ALERTLER
 
   if (soruSayisi === 0) {
-    Swal.fire("YENİ OYUN BASLIYOR.. HAZIRSAN BASLA");
+    Swal.fire("NEW GAME IS STARTING.. ARE YOU READY ?");
   } else if (soruSayisi === 9) {
-    Swal.fire("SON SORU GELİYOR");
+    Swal.fire("LAST QUESTION IS COMING");
   } else if (soruSayisi === 10) {
-    Swal.fire("OYUN BITTI PUANINIZ : " + puan);
+    Swal.fire("GAME OVER ... YOUR POINTS   : " + puan);
   }
 }

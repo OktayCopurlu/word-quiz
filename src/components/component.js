@@ -45,10 +45,10 @@ function Quiz(props) {
     if (e.target.id.includes("true")) {
       setIsVisible(true);
       setPuan(puan + 10);
-      setCevap("DOGRU BILDIN BRAVOOO");
+      setCevap("WELL DONE CORRECT ANSWER");
       setDogruCevap(dogruCevap + 1);
     } else {
-      setCevap("SIKI CALISMALISIN");
+      setCevap("STUDY HARD");
       setYanlisCevap(yanlisCevap + 1);
       setIsVisible(false);
     }
@@ -63,9 +63,9 @@ function Quiz(props) {
 
   return (
     <>
-      {(soruSayisi < 10) ? ( // soru sayisi 10 dan küçük olduğu sürece çalışan kısım.
+      {soruSayisi < 10 ? ( // soru sayisi 10 dan küçük olduğu sürece çalışan kısım.
         <>
-          <button>{cevap}</button>
+          <h2>{cevap}</h2>
           <div id="soru" className="soru">
             <div>
               <button>{soru.question}</button>
@@ -78,31 +78,35 @@ function Quiz(props) {
               );
             })}
           </div>
+          <div className="skor">
+            <button
+              style={isVisible === true ? { backgroundColor: "green" } : null}
+            >
+              CORRECT ANSWER: {dogruCevap}
+            </button>
+            <button
+              style={isVisible === false ? { backgroundColor: "red" } : null}
+            >
+              FALSE ANSWER :{yanlisCevap}
+            </button>
+            <button>POINT : {puan}</button>
+          </div>
           <button id="yeni-oyun" onClick={Finish} type="button">
-            OYUNU BITIR VE YENI OYUNA BASLA
+            FINISH THE GAME AND PLAY AGAIN
           </button>
         </>
       ) : (
         // soru sayisi 10 a geldiğinde çalışan kısım.
         <>
-          <button type="button">OYUN BITTI... PUANINIZ :{puan}</button>
-          <button id="finish" type="button" onClick={Finish}>
-            HAYDI BIR OYUN DAHA OYNA
+          <h1 className="oyun-bitti">GAME OVER... </h1>
+          <h2 className="oyun-bitti">CORRECT ANSWER :  {dogruCevap}</h2>
+          <h2 className="oyun-bitti">FALSE ANSWER :  {yanlisCevap}</h2>
+          <h1 className="oyun-bitti">YOUR POINTS :  {puan}</h1>
+          <button className="oyun-bitti" id="finish" type="button" onClick={Finish}>
+            LET'S PLAY AGAIN
           </button>
         </>
       )}
-
-      <div className="skor">
-        <button
-          style={isVisible === true ? { backgroundColor: "green" } : null}
-        >
-          CORRECT ANSWER: {dogruCevap}
-        </button>
-        <button style={isVisible === false ? { backgroundColor: "red" } : null}>
-          FALSE ANSWER :{yanlisCevap}
-        </button>
-        <button>POINT : {puan}</button>
-      </div>
     </>
   );
 }
