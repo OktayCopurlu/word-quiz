@@ -1,11 +1,11 @@
 import "./App.css";
-import GetData from "./components/component";
+import Quiz from "./components/component";
 import data from "./components/data.json";
-
+//import Alert from "./components/alert";
 function App() {
   return (
     <div className="App">
-      <GetData list={data} />
+      <Quiz list={data} />
     </div>
   );
 }
