@@ -35,7 +35,7 @@ function Quiz(props) {
   });
   //cevap seçildikten sonraki aksiyonlar
   const [puan, setPuan] = useState(0);
-  const [cevap, setCevap] = useState("DOGRU CEVAP 10 PUAN");
+  const [cevap, setCevap] = useState("CORRECT ANSWER 10 POINT");
   const [dogruCevap, setDogruCevap] = useState(0);
   const [yanlisCevap, setYanlisCevap] = useState(0);
   const [isVisible, setIsVisible] = useState(null); //true yada false oldugunda botton background değişiyor.
@@ -94,6 +94,7 @@ function Quiz(props) {
           <button id="yeni-oyun" onClick={Finish} type="button">
             FINISH THE GAME AND PLAY AGAIN
           </button>
+          
         </>
       ) : (
         // soru sayisi 10 a geldiğinde çalışan kısım.
